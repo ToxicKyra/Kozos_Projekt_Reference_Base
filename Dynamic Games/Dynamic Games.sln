@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic Games", "Dynamic Ga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandEvaluator", "HandEvaluator\HandEvaluator.csproj", "{57836673-FE81-4367-A4EB-AAA46FB954D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicGamesTests", "DynamicGamesTests\DynamicGamesTests.csproj", "{25054010-F5F6-420A-B2DA-97100431C316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57836673-FE81-4367-A4EB-AAA46FB954D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57836673-FE81-4367-A4EB-AAA46FB954D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57836673-FE81-4367-A4EB-AAA46FB954D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25054010-F5F6-420A-B2DA-97100431C316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25054010-F5F6-420A-B2DA-97100431C316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25054010-F5F6-420A-B2DA-97100431C316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25054010-F5F6-420A-B2DA-97100431C316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

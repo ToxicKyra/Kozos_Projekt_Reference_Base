@@ -51,7 +51,7 @@ namespace Dynamic_Games
         }
 
 
-        List<PictureBox> cardIterator = new List<PictureBox>(21);
+        public List<PictureBox> cardIterator = new List<PictureBox>(21);
         public List<PlayerVisuals> playerVis = new List<PlayerVisuals>(6);
         List<Label> cashIterator = new List<Label>(8);
         public List<Label> betIterator = new List<Label>(8);
@@ -66,6 +66,15 @@ namespace Dynamic_Games
             this.CreateHandle();
             groupVisuals();
             PostInit();
+
+
+
+            cardIterator.Add(Flop1);
+            cardIterator.Add(Flop2);
+            cardIterator.Add(Flop3);
+            cardIterator.Add(River);
+            cardIterator.Add(Turn);
+
             cardIterator.Add(P1C1);
             cardIterator.Add(P1C2);
             cardIterator.Add(P2C1);
@@ -103,13 +112,7 @@ namespace Dynamic_Games
             restart = false;
             table = new Table(new Deck(), playernum, this);
             table.startTable();
-            /*
-            cardIterator.Add(Flop1);
-            cardIterator.Add(Flop2);
-            cardIterator.Add(Flop3);
-            cardIterator.Add(River);
-            cardIterator.Add(Turn);
-            */
+
         }
 
         public void newTable()

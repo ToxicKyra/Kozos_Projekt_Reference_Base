@@ -4,7 +4,6 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
 
-[assembly: FileIOPermission(SecurityAction.RequestMinimum)]
 [assembly: AssemblyTitle("HandEvaluator")]
 [assembly: AssemblyDescription("This assembly is released under the LGPL software license.")]
 [assembly: AssemblyCopyright("Copyright © Keith Rule 2005-2007")]

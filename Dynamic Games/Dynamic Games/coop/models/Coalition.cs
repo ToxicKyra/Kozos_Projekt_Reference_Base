@@ -43,7 +43,7 @@ namespace Dynamic_Games.coop.models
             maximumCalculated = false;
         }
 
-        private void calculateMaximumValue()
+        public void calculateMaximumValue()
         {
             maximumValue = 0;
             bool init = true;
