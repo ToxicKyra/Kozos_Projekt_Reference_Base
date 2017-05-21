@@ -59,7 +59,7 @@ namespace DynamicGamesTests
             Coalition c = new Coalition(5);
             ValueFunction vf = new ValueFunction("");
             int[] materials = new int[5];
-            double max = 0;
+            double max = 0, res = 0;
             materials[0] = 1;
             materials[1] = 5;
             materials[2] = 3;
@@ -75,77 +75,82 @@ namespace DynamicGamesTests
                 {
                     max = i;
                 }
+
+                if (i > c.getMaximumValue())
+                {
+                    res = i;
+                }
             }
-            double res = c.getMaximumValue();
-            Assert.AreEqual(max, 2*res);
+
+            Assert.AreEqual(max, res);
         }
 
-        //[TestMethod]
-        //public void CardStatTest()
-        //{
+        [TestMethod]
+        public void CardStatTest()
+        {
 
-        //    Dictionary<string, int> dictionary = new Dictionary<string, int>();
+            Dictionary<string, int> dictionary = new Dictionary<string, int>();
 
-        //    String symbol = "c";
-        //    String nameHelper;
+            String symbol = "c";
+            String nameHelper;
 
-        //    for (int i = 0; i < 4; i++)
-        //    {
-        //        for (int num = 1; num <= 9; num++)
-        //        {
-        //            nameHelper = symbol + "0" + num.ToString();
-        //            dictionary.Add(nameHelper, 0);
-        //        }
-        //        for (int num = 10; num <= 13; num++)
-        //        {
-        //            nameHelper = symbol + num.ToString();
-        //            dictionary.Add(nameHelper, 0);
-        //        }
-        //        switch (symbol)
-        //        {
-        //            case "c":
-        //                symbol = "d";
-        //                break;
-        //            case "d":
-        //                symbol = "h";
-        //                break;
-        //            case "h":
-        //                symbol = "s";
-        //                break;
-        //        }
-        //    }
+            for (int i = 0; i < 4; i++)
+            {
+                for (int num = 1; num <= 9; num++)
+                {
+                    nameHelper = symbol + "0" + num.ToString();
+                    dictionary.Add(nameHelper, 0);
+                }
+                for (int num = 10; num <= 13; num++)
+                {
+                    nameHelper = symbol + num.ToString();
+                    dictionary.Add(nameHelper, 0);
+                }
+                switch (symbol)
+                {
+                    case "c":
+                        symbol = "d";
+                        break;
+                    case "d":
+                        symbol = "h";
+                        break;
+                    case "h":
+                        symbol = "s";
+                        break;
+                }
+            }
 
-        //    int n = 1000;
+            int n = 1000;
 
-        //    for (int j = 0; j < n; j++)
-        //    {
-        //        Dynamic_Games.IncInformation.Cards.Deck d = new Dynamic_Games.IncInformation.Cards.Deck();
-        //        for (int i = 0; i < 21; i++)
-        //        {
-        //            Dynamic_Games.IncInformation.Cards.Card c = d.getCard();
-        //            dictionary[c.CardName]++;
-        //        }
-        //    }
+            for (int j = 0; j < n; j++)
+            {
+                Dynamic_Games.IncInformation.Cards.Deck d = new Dynamic_Games.IncInformation.Cards.Deck();
+                for (int i = 0; i < 21; i++)
+                {
+                    Dynamic_Games.IncInformation.Cards.Card c = d.getCard();
+                    dictionary[c.CardName]++;
+                }
+            }
 
-        //    double alfa = n * 0.41;
+            double alfa = n * 0.41;
 
-        //    double epsilon = 100;
+            double epsilon = 100;
 
-        //    bool result = true;
+            bool result = true;
 
-        //    Console.WriteLine("Epsilon : " + epsilon + "      Alfa : " + alfa);
+            Console.WriteLine("Epsilon : " + epsilon + "      Alfa : " + alfa);
 
-        //    foreach (KeyValuePair<string, int> entry in dictionary)
-        //    {
-        //        Console.WriteLine("Key : " + entry.Key + "   Value: " + entry.Value + "     Gamma: " + (entry.Value - alfa));
-        //        if (Math.Abs(entry.Value - alfa) > epsilon)
-        //        {
-        //            Console.WriteLine("FAILED");
-        //            result = false;
-        //        }
-        //    }
-        //    Assert.IsTrue(result);
-        //}
+            foreach (KeyValuePair<string, int> entry in dictionary)
+            {
+                Console.WriteLine("Key : " + entry.Key + "   Value: " + entry.Value + "     Gamma: " + (entry.Value - alfa));
+                if (Math.Abs(entry.Value - alfa) > epsilon)
+                {
+                    Console.WriteLine("FAILED");
+                    result = false;
+                }
+            }
+            Assert.IsTrue(result);
+        }
 
         //[TestMethod]
         //public void CardTest()
