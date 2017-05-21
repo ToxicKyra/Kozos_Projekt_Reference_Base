@@ -388,7 +388,7 @@ namespace Dynamic_Games
         }
 
         // when a player comes in, gets a random function
-        private String getRandomFunction(int m)
+        public String getRandomFunction(int m)
         {
             String result = "";
             for (int j = 0; j < m; j++)
@@ -400,7 +400,7 @@ namespace Dynamic_Games
         }
 
         // when a player comes in, gets a random materials
-        private String getRandomMaterials(int m)
+        public String getRandomMaterials(int m)
         {
     	    String result = "";
             for (int j = 0; j < m; j++)

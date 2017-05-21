@@ -13,11 +13,14 @@ namespace Dynamic_Games.coop.models
     {
         public const String MARK = "X";
         public const String pattern = MARK + @"(\d+)(\^)(\d+)";
-        private String function;
+        public String function;
 
         public String Function
         {
-            get { return function; }
+            get
+            {
+                return function;
+            }
             set
             {
                 function = Regex.Replace(value.ToUpper(), pattern, "Math.pow($1,$3)");
