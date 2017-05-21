@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Games.coop.backend
 {
-    class AnytimeAlgorithm : EquilibriumCalculator
+    public class AnytimeAlgorithm : EquilibriumCalculator
     {
         private List<int[]> setG; // the set of possible integer partitions of n.
         private List<Double> avgOfSetG; // the average value of elements in Coalitions classified by G
@@ -58,7 +58,7 @@ namespace Dynamic_Games.coop.backend
         }
 
         //get n Number's partitions containing  exactly l number;
-        private List<int[]> getNumbersPartition(int n, int l)
+        public List<int[]> getNumbersPartition(int n, int l)
         {
             List<int[]> partitions = new List<int[]>();
             int[] partition = new int[l]; // one partition contains exactly l number;
@@ -93,7 +93,7 @@ namespace Dynamic_Games.coop.backend
         }
 
         //generate n numbers all partitions except those are l long
-        private List<int[]> generateNumbersAllPartitionExcept(int n, int l)
+        public List<int[]> generateNumbersAllPartitionExcept(int n, int l)
         {
             List<int[]> partitions = new List<int[]>();
             for (var i = 1; i <= n; i++)

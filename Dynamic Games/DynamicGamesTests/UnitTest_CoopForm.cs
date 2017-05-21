@@ -28,7 +28,7 @@ namespace DynamicGamesTests
         }
 
         [TestMethod]
-        public void getRandomFunction()
+        public void GetRandomFunction()
         {
             int m = 5;
             CoopForm cf = new CoopForm();
@@ -38,13 +38,13 @@ namespace DynamicGamesTests
         }
 
         [TestMethod]
-        public void getRandomMaterial()
+        public void GetRandomMaterial()
         {
             int m = 5;
             CoopForm cf = new CoopForm();
             string res = cf.getRandomMaterials(m);
 
-            Assert.IsTrue(res.Length == (2 * m - 1)); // <number> <number>
+            Assert.IsTrue(res.Split(' ').Length == m); // <number> <number>
         }
     }
 }

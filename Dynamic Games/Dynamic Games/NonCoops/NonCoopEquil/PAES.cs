@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Dynamic_Games
 {
 
-    class PAES
+    public class PAES
     {
         int LARGE = 200000000;// should be about the maximum size of an integer for your compiler
         Random r;
@@ -237,7 +237,7 @@ namespace Dynamic_Games
         }
 
 
-        int equal(double[] first, double[] second, int n)
+        public int equal(double[] first, double[] second, int n)
         {
             // checks to n-dimensional vectors of objectives to see if they are identical
             // returns 1 if they are, 0 otherwise

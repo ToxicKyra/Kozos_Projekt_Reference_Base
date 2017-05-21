@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Games
 {
-    class Rules
+    public class Rules
     {
 
         // The first rule

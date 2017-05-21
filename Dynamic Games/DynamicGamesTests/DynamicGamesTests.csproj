@@ -47,13 +47,21 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest_PAES_NonCoopEquil.cs" />
+    <Compile Include="UnitTest_Rules_NonCoops.cs" />
+    <Compile Include="UnitTest_AnytimeAlgorithm_Coop.cs" />
+    <Compile Include="UnitTest_ValueFunction_Coop.cs" />
+    <Compile Include="UnitTest_Coalition_Coop.cs" />
+    <Compile Include="UnitTest_NonCoopForm.cs" />
+    <Compile Include="UnitTest_CoopForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dynamic Games\Dynamic Games.csproj">
