@@ -965,11 +965,11 @@ namespace Dynamic_Games
         private PictureBox P8C1;
         private Label PlayerNrLabel;
         private Label P1Label;
-        private PictureBox Flop1;
-        private PictureBox Flop2;
-        private PictureBox Flop3;
-        private PictureBox River;
-        private PictureBox Turn;
+        public PictureBox Flop1;
+        public PictureBox Flop2;
+        public PictureBox Flop3;
+        public PictureBox River;
+        public PictureBox Turn;
         private ComboBox P1ComboBox;
         private ComboBox P2ComboBox;
         private Label P2Label;

@@ -10,10 +10,8 @@ using Dynamic_Games.IncInformation.Game;
 
 namespace Dynamic_Games.IncInformation.Player
 {
-    class HumanPlayer : Player
+    public class HumanPlayer : Player
     {
-        
-
         public HumanPlayer(int cash, int i, Table t)
         {
             cards = new List<MyCard.Card>(2);

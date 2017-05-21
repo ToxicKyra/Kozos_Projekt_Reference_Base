@@ -62,6 +62,10 @@
     <Compile Include="UnitTest_Coalition_Coop.cs" />
     <Compile Include="UnitTest_NonCoopForm.cs" />
     <Compile Include="UnitTest_CoopForm.cs" />
+    <Compile Include="UniteTest_Player_IncInformation.cs" />
+    <Compile Include="EndToEnd.cs" />
+    <Compile Include="UnitTest_Table_IncInformation.cs" />
+    <Compile Include="UnitTest_IncInformationForm_IncInformation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dynamic Games\Dynamic Games.csproj">

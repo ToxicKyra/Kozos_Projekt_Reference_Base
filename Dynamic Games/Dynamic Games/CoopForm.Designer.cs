@@ -302,12 +302,12 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartProfit;
-        private System.Windows.Forms.Button buttonStart;
+        public System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttonStop;
+        public System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Button buttonNewPlayer;
         private System.Windows.Forms.Button buttonLeaver;
         public System.Windows.Forms.NumericUpDown numericPlayer;

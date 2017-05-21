@@ -55,7 +55,7 @@ namespace Dynamic_Games
         public List<PlayerVisuals> playerVis = new List<PlayerVisuals>(6);
         List<Label> cashIterator = new List<Label>(8);
         public List<Label> betIterator = new List<Label>(8);
-        Table table;
+        public Table table;
         int playernum;
         int aiNUm;
         public volatile bool restart;
@@ -277,7 +277,6 @@ namespace Dynamic_Games
         }
         public void vizualize()
         {
-            int needed = table.players.Count;
             int i = 0;
             foreach (Player p in table.players)
             {

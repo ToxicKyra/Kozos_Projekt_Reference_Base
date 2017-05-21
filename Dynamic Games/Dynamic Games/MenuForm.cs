@@ -12,6 +12,8 @@ namespace Dynamic_Games
 {
     public partial class MenuForm : Form
     {
+        public NonCoopForm nonCoopForm;
+
         public MenuForm()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Dynamic_Games
 
         private void buttonNonCoop_Click(object sender, EventArgs e)
         {
-            var nonCoopForm = new NonCoopForm();
+            nonCoopForm = new NonCoopForm();
             this.Hide();
             nonCoopForm.ShowDialog();
             // When new form DioalogResult = ok

@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CColor = System.Drawing.Color;
-using System.Resources;
 using System.Windows.Forms.DataVisualization.Charting;
 using Dynamic_Games.coop.backend;
 using Dynamic_Games.Coop.Exceptions;
@@ -82,6 +76,12 @@ namespace Dynamic_Games
             richTextBoxPlayerFunc.Text = text;
             numericPlayer.Value = richTextBoxPlayerFunc.Lines.Count();
         }
+
+        private void Exit()
+        {
+            this.Close();
+        }
+
 
         //check if everything is filled.
         public bool CheckFill()
