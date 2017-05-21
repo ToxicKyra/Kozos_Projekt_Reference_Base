@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UniteTest_Player_IncInformation.cs" />
+    <Compile Include="EndToEnd.cs" />
     <Compile Include="UnitTest_Table_IncInformation.cs" />
     <Compile Include="UnitTest_IncInformationForm_IncInformation.cs" />
   </ItemGroup>

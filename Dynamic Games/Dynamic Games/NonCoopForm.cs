@@ -44,6 +44,11 @@ namespace Dynamic_Games
 
         }
 
+        private void Exit()
+        {
+            this.Close();
+        }
+
         public bool checkParams()
         {
             if (NoPTB.Text.Equals(""))
