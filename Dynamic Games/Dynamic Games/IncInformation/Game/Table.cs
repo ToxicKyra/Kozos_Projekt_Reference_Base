@@ -108,7 +108,7 @@ namespace Dynamic_Games.IncInformation.Game
         }
 
 
-        private void swapCard(ref MyCard.Card c1, ref MyCard.Card c2)
+        public void swapCard(ref MyCard.Card c1, ref MyCard.Card c2)
         {
             MyCard.Card temp = c1;
             c1 = c2;

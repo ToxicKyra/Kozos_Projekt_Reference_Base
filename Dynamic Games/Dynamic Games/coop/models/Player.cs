@@ -36,8 +36,8 @@ namespace Dynamic_Games.coop.models
 
         public Player(ValueFunction valueFunction, int[] materials)
         {
-            this.Materials = materials;
-            this.ValueFunction = valueFunction;
+            this.materials = materials;
+            this.valueFunction = valueFunction;
         }
 
         public override string ToString()

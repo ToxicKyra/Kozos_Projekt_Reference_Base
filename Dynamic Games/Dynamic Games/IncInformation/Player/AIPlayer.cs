@@ -11,7 +11,7 @@ using Dynamic_Games.IncInformation.Game;
 
 namespace Dynamic_Games.IncInformation.Player
 {
-    class AIPlayer : Player
+    public class AIPlayer : Player
     {
         public Parameters par;
 
